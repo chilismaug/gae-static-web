@@ -1,0 +1,1 @@
+{"mixinTypes":[],"builders":{"configs":{}},"runners":{"configs":{},"default":"system:/python/web/python27_gae1914"},"description":"Serving html pages","type":"GAEPython","attributes":{"language":["python"]}}

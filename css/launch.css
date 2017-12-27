@@ -1,0 +1,58 @@
+@CHARSET "UTF-8";
+/***************************************
+   Default Styles
+************************************** */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 62.5% Verdana, Helvetica, Arial, sans-serif;
+  color: #000;
+  background: #fff;
+}
+#container {
+  margin: 16em;
+  font-size: 1.2em;
+ 
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 1.3em;
+  margin-bottom: .5em;
+}
+h3 {
+  font-size: 1.1em;
+  margin-bottom: 0;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+a {
+  color: #06581f;
+}
+ 
+#header{
+ 	width:100%;
+ 	border: 0px;
+ 	height:20px;
+}
+
+#main{
+	background-color: #AACCFF;
+   width: 500px;
+	height: 90px; 
+}
+
+.my_hover{
+	border: solid #00f 3px;
+}
