@@ -1,0 +1,24 @@
+<!--(C)2015 Flametree Publishing
+	Every Day Guides Made Easy: Coding JavaScript
+	The following code example corresponds with the Step-by-Step example shown
+	on page 74 of the book.	
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>A Simple Quiz</title>
+		
+		<!--This script element links to an external script...-->
+	    <script type="text/javascript" src="js/QuizQuestion.js"></script>
+		<script type="text/javascript" src="js/SimpleQuiz.js"></script>
+	</head>
+	
+	<body>
+		<script type="text/javascript">
+			 com.flametreepublishing.simpleQuiz = new com.flametreepublishing.SimpleQuiz();
+			 com.flametreepublishing.simpleQuiz.renderAllQuestions();
+		</script>
+		
+	</body>
+</html>
