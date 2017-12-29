@@ -14,7 +14,7 @@ com.flametreepublishing.SimpleQuiz = function(){
 }
 
 com.flametreepublishing.SimpleQuiz.prototype.loadQuestions = function() {
-    
+
 //QUESTION 1
 this.questions.push(
     new com.flametreepublishing.QuizQuestion(
@@ -40,13 +40,28 @@ this.questions.push(
 this.questions.push(
     new com.flametreepublishing.QuizQuestion(
 	4,  "Which of these is a peepl like uzzz?",
-	 ["Mike", "Miranda", "Jason", "Yr Uncle"], 2)
+	 ["Mike", "Miranda", "Yolanda", "Yr Uncle"], 2)
 );
 
 }
 
 com.flametreepublishing.SimpleQuiz.prototype.renderAllQuestions = function() {
-			for(var i = 0; i < this.questions.length ; i++) {
+			for(var i = 0; i < this.questions.length; i++) {
                 this.questions[i].renderQuestion();
             }
         }
+
+com.flametreepublishing.SimpleQuiz.prototype.clickHandler = function(e) {
+  var clickedAnswerId = e.target.id;
+  var clickedAnswerIndex =  Number(clickedAnswerId.substr(1, 1));
+  var clickedQuestionId = e.target.parentNode.id;
+  var clickedQuestionNum =  Number(clickedQuestionId.substr(1, 1));
+//   var clickedQuestion = com.flametreepublishing.SimpleQuiz.questions[clickedQuestionNum-1];
+  var clickedQuestion = com.flametreepublishing.simpleQuiz.questions[clickedQuestionNum -1];
+  //book has "simpleQuiz"
+  if(clickedQuestion.checkUserAnswer(clickedAnswerIndex)){
+    alert("boffo! you are prime.")
+  } else {
+    alert("...not so very cherry. Try again?")
+  }
+}
