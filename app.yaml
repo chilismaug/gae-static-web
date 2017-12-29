@@ -7,8 +7,9 @@
 # using cloud.google.com/console use the "project id" for your application
 # id.
 
-application: staticwebtest
-version: 1
+#application: staticwebtest
+# in 2017, gcloud tells me this application key is deprecated, use project id instead from gcloud cmd
+# version: 1  ditto version
 runtime: python27
 api_version: 1
 threadsafe: true
