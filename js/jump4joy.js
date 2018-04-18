@@ -24,8 +24,8 @@ $(document).ready(function() {
 		var discount;
 	 	if($.contains(this, document.getElementById("has_discount") ) )
 		{
-			var my_num = getRandom(100);
-			discount = "<p>Your Code: CODE"+my_num +"</p>";
+			var rand_num = getRandom(100);
+			discount = "<p>Hooray! Your Code: CODE"+rand_num +"</p>";
 		}else{
 			discount = "<hr>Sorry, no discount this time!" ;
 		}
@@ -33,14 +33,14 @@ $(document).ready(function() {
 			if($.contains(this, document.getElementById("has_discount") ) )
 			{
 				$(this).addClass("discount");
-				$("#result").css( "background-color","cyan");
+				$(".result_box").addClass("discount");				
 			}else{
 				$(this).addClass("no_discount");
-				$("#result").css( "background-color","red");
+				$(".result_box").addClass("no_discount");	
 			}
 			$(this).unbind();
 		});
-		$("#result").append(discount);
+		$(".result_box").append(discount);
 	} // End checkForCode function
 
 	$(".guess_box").hover(

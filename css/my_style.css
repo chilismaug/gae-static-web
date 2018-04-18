@@ -13,7 +13,6 @@ body {
   background: #fff;
 }
 
-
 h1 {
   font-size: 2.5em;
   margin-bottom: 0;
@@ -44,6 +43,7 @@ a {
   padding: 10px;
   font-size: .9em;
 }
+
 .topnav h3 {
   margin: .5em 0;
 }
@@ -51,9 +51,7 @@ a {
 div{
 	float:left;
 	border: solid gray 5px;
-	text-align:left;
- 
- 
+	text-align:left; 
 }
 
 .guess_box{
@@ -72,9 +70,9 @@ button{
    display: block;
    margin: auto;
    margin-left: 242px ; 
-    border: solid #bcd 12px;
-  	width: 295px;
-	height: 95px;
+   border: solid #bcd 12px;
+   width: 295px;
+   height: 95px;
    background-color: #eef;
    text-align: center;
    font-style: sans-serif bold;
