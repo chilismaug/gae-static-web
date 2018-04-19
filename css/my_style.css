@@ -101,6 +101,10 @@ button{
 	border: solid #00f 3px;
 }
 
+.my_bright{
+	background-color: cyan;
+}
+
 .discount{
 	border: solid #0f0 3px;
 }

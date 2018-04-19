@@ -27,22 +27,23 @@ $(document).ready(function() {
 			var rand_num = getRandom(100);
 			discount = "<p>Hooray! Your Code: CODE"+rand_num +"</p>";
 		}else{
-			discount = "<hr>Sorry, no discount this time!" ;
+			discount = "<hr>Sorry, no discount this time." ;
 		}
 		$(".guess_box").each(function() {
 			if($.contains(this, document.getElementById("has_discount") ) )
 			{
-				$(this).addClass("discount");
-				$(".result_box").addClass("discount");				
+				$(this).addClass("discount");			
 			}else{
-				$(this).addClass("no_discount");
-				$(".result_box").addClass("no_discount");	
+				$(this).addClass("no_discount");	
 			}
 			$(this).unbind();
 		});
 		$(".result_box").append(discount);
+		$(".result_box:contains('Hooray')").css("background-color", "cyan");
+		
 	} // End checkForCode function
 
+	
 	$(".guess_box").hover(
 	  function () {
 		$(this).addClass("my_hover");
