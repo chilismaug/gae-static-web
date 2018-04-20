@@ -2,30 +2,6 @@
    Default Styles
 ************************************** */
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font: 62.5% Verdana, Helvetica, Arial, sans-serif;
-  color: #000;
-  background: #fff;
-}
-
-h1 {
-  font-size: 2.5em;
-  margin-bottom: 0;
-}
-
-h2 {
-  font-size: 1.3em;
-  margin-bottom: .5em;
-}
-h3 {
-  font-size: 1.1em;
-  margin-bottom: 0;
-}
 
 code {
   font-size: 1.2em;
@@ -37,7 +13,7 @@ a {
 
 .topnav {
   float: left;
-  background-color: #ddd;
+
   border: 1px solid #000;
   margin: 10px;
   padding: 10px;
@@ -50,26 +26,24 @@ a {
 
 div{
 	float:left;
-	border: solid gray 5px;
-	text-align:left; 
+	text-align:left;
 }
 
 .guess_box{
-	height:245px;
-    margin-bottom:40px
+  height:245px;
+  margin-bottom:40px
 
- 
 }
 
-button{ 
+button{
    display: block;
    margin: auto;
 }
 
-.result_box{ 
+.result_box{
    display: block;
    margin: auto;
-   margin-left: 242px ; 
+   margin-left: 242px ;
    border: solid #bcd 12px;
    width: 295px;
    height: 95px;
@@ -90,11 +64,11 @@ button{
 }
 
 .page-content{
-	background-color: gray;
+
 	height: 500px;
 	margin: auto;
-	margin-top: 42px ; 
-	margin-left: 92px ; 
+	margin-top: 42px ;
+	margin-left: 92px ;
 }
 
 .my_hover{

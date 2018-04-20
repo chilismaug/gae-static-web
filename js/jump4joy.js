@@ -1,6 +1,7 @@
 /*eslint-env jquery, browser*/
 $(document).ready(function() {
-
+	$(".reloader").hide();
+	$(".hint").show();
 	$(".guess_box").click( checkForCode );
 
 	function getRandom(num){
@@ -38,8 +39,10 @@ $(document).ready(function() {
 			}
 			$(this).unbind();
 		});
-		$(".result_box").append(discount);
+		$(".result_box").prepend(discount);
 		$(".result_box:contains('Hooray')").css("background-color", "cyan");
+		$(".hint").hide();
+		$(".reloader").show();
 		
 	} // End checkForCode function
 

@@ -1,7 +1,6 @@
-// (C)2015 Flametree Publishing Every Day Guides Made Easy: Coding JavaScript
-//	The following code example corresponds with the Step-by-Step example shown
-//	on page 74 of the book.
-
+<!-- (C)2015 Flametree Publishing Every Day Guides Made Easy: Coding JavaScript
+ 	The following code example corresponds with the Step-by-Step example shown
+ 	on page 74 of the book.-->
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -12,7 +11,46 @@
 		<script type="text/javascript" src="../js/QuizQuestion.js"></script>
 		<script type="text/javascript" src="../js/SimpleQuiz.js"></script>
 		<script type="text/javascript" src="../js/quizStartup.js"></script>
-	</head>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+		<link rel="stylesheet" href="/css/quiz_style.css" >
 
-	<body>	</body>
+		<!-- I am trying out Material Design Light -->
+
+	</head>
+	<body>
+		<!-- Always shows a header, even in smaller screens. -->
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		  <header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+			  <!-- Title -->
+			  <span class="mdl-layout-title">A Simple Quiz</span>
+			  <!-- Add spacer, to align navigation to the right -->
+			  <div class="mdl-layout-spacer"></div>
+			  <!-- Navigation. We hide it in small screens. -->
+			  <nav class="mdl-navigation mdl-layout--large-screen-only">
+				<a class="mdl-navigation__link" href="../">Home hinky</a>
+				<a class="mdl-navigation__link" href="">Pink</a>
+				<a class="mdl-navigation__link" href="">Mink</a>
+				<a class="mdl-navigation__link" href="">Plink</a>
+			  </nav>
+			</div>
+		  </header>
+		  <div class="mdl-layout__drawer">
+			<span class="mdl-layout-title">Layout Drawer Title</span>
+			<nav class="mdl-navigation">
+			  <a class="mdl-navigation__link" href="../">Home hinky</a>
+			  <a class="mdl-navigation__link" href="">Linky</a>
+			  <a class="mdl-navigation__link" href="">Dink</a>
+			  <a class="mdl-navigation__link" href="">Skink</a>
+			</nav>
+		  </div>
+		  <main class="mdl-layout__content">
+			<div class="page-content" id="container">	 
+			</div>
+		  </main>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+	</body>
 </html>

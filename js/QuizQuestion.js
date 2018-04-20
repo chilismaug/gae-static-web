@@ -45,5 +45,7 @@ com.flametreepublishing.QuizQuestion.prototype.renderQuestion = function(){
     questionDiv.appendChild(answerPara);
 
   }
-  document.body.appendChild(questionDiv);
+  //document.body.appendChild(questionDiv);
+	var contentDiv = document.getElementsByClassName('page-content')[0];
+	contentDiv.appendChild(questionDiv); 
 }

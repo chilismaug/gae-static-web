@@ -15,8 +15,7 @@ body {
 }
 #container {
   margin: 16em;
-  font-size: 1.2em;
- 
+  font-size: 1.4em;
 }
 
 h1 {
@@ -40,19 +39,19 @@ code {
 a {
   color: #06581f;
 }
- 
+
+ul {
+  margin: 1em;
+}
+
 #header{
  	width:100%;
- 	border: 0px;
+   margin: 1em;
  	height:20px;
 }
 
 #main{
-	background-color: #AACCFF;
-   width: 500px;
-	height: 90px; 
-}
-
-.my_hover{
-	border: solid #00f 3px;
+	 background-color: #AACCFF;
+   width: 810px;
+   border: solid #def 9px;
 }

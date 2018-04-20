@@ -60,8 +60,8 @@ com.flametreepublishing.SimpleQuiz.prototype.clickHandler = function(e) {
   var clickedQuestion = com.flametreepublishing.simpleQuiz.questions[clickedQuestionNum -1];
   //book has "simpleQuiz"
   if(clickedQuestion.checkUserAnswer(clickedAnswerIndex)){
-    alert("boffo! you are prime.")
+    alert("You are prime!")
   } else {
-    alert("...not so very cherry. Try again?")
+    alert("Try again?")
   }
 }
